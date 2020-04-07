@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'personal-website-v2';
+  menuIcon = 'menu';
+
+  openCloseMenu() {
+    if (this.menuIcon === 'menu') {
+      this.menuIcon = 'menu_open';
+    } else {
+      this.menuIcon = 'menu';
+    }
+  }
+
 }

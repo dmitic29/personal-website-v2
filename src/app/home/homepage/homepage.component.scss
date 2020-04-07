@@ -1,0 +1,30 @@
+:host {
+  text-align: center;
+}
+
+p {
+  display: inline-block;
+  text-align: justify;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+mat-card-header {
+  text-align: center;
+}
+img {
+  max-width: 80%;
+  max-height: 490px;
+  margin-bottom: 5%;
+}
+
+washi-img {
+  width: 40%;
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+mat-card-subtitle {
+  text-align: left;
+}

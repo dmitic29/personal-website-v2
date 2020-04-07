@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "personal-website-v2"
+    }
+  },
+  "defaultProject": "personal-website-v2",
+  "cli": {
+    "analytics": false
+  }
 }
