@@ -10,7 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 
 const contactRoutes: Routes = [
   { path: '', component: ContactpageComponent }
-]
+];
 
 @NgModule({
   declarations: [ContactpageComponent],

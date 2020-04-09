@@ -1,32 +1,33 @@
-<mat-toolbar class="toolbar" color="primary">
-  <button mat-icon-button (click)="openCloseMenu(); drawer.toggle()">
-    <mat-icon>{{menuIcon}}</mat-icon>
-  </button>
-  <h1 id="toolbar-title">Dimitrije Mitic</h1>
-</mat-toolbar>
+  <mat-toolbar class="toolbar" color="primary">
+    <button mat-icon-button (click)="openCloseMenu(); drawer.toggle()">
+      <mat-icon>{{menuIcon}}</mat-icon>
+    </button>
+    <h1 id="toolbar-title">Dimitrije Mitic</h1>
+  </mat-toolbar>
 
-<mat-drawer-container class="drawer-container">
-  <mat-drawer #drawer class="drawer-drawer" mode="side" closed>
-    <h3>Menu</h3>
-    <div class="btn-link">
-      <a routerLink="/home"><button class="navigation-btn" mat-flat-button color="accent">Home</button></a>
-    </div>
-    <div class="btn-link">
-      <a routerLink="/contact"><button class="navigation-btn" mat-flat-button color="accent">Contact</button></a>
-    </div>
+  <mat-drawer-container class="drawer-container">
+    <mat-drawer #drawer class="drawer-drawer" mode="side" opened>
+      <h3>Menu</h3>
+      <div class="btn-link">
+        <a routerLink="/home"><button class="navigation-btn" mat-flat-button color="accent">Home</button></a>
+      </div>
+      <div class="btn-link">
+        <a routerLink="/work"><button class="navigation-btn" mat-flat-button color="accent">Professional</button></a>
+      </div>
+      <div class="btn-link">
+        <a routerLink="/contact"><button class="navigation-btn" mat-flat-button color="accent">Contact</button></a>
+      </div>
 
-  </mat-drawer>
-  <mat-drawer-content class="drawer-content">
-    <router-outlet></router-outlet>
-    <div class="footer">
-      <p>
-      &copy; Dimitrije Mitic, All Rights Reserved
-      <br/>
-      <a href="mailto:dimitrije.mitic29@gmail.com" target="_blank">dimitrije.mitic29@gmail.com</a>
-      <br/>
-    </p>
-    </div>
-  </mat-drawer-content>
-</mat-drawer-container>
-
-
+    </mat-drawer>
+    <mat-drawer-content class="drawer-content">
+      <router-outlet></router-outlet>
+      <footer class="footer">
+        <p>
+        &copy; Dimitrije Mitic, All Rights Reserved
+        <br/>
+        <a href="mailto:dimitrije.mitic29@gmail.com" target="_blank">dimitrije.mitic29@gmail.com</a>
+        <br/>
+      </p>
+      </footer>
+    </mat-drawer-content>
+  </mat-drawer-container>

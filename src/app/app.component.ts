@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  menuIcon = 'menu';
+  menuIcon = 'menu_open';
 
   openCloseMenu() {
     if (this.menuIcon === 'menu') {

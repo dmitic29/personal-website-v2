@@ -31,8 +31,13 @@ $personal-website-v2-theme: mat-dark-theme($personal-website-v2-primary, $person
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 
-a {
+h1 {
   color: #F50057;
+  text-decoration: none;
+}
+
+a {
+  color: #304FFE;
   text-decoration: none;
 }
 
@@ -48,14 +53,15 @@ a {
 }
 
 .drawer-container {
-  background-image: linear-gradient(to bottom, #303030, black);
-  padding-top: 5%;
-  height: 99.99%;
-  max-height: 99.99%;
+  background-image: linear-gradient(to bottom, #222222, black);
+  height: 100%;
+  max-height: 100%;
   border: 1px solid #212121;
-  @media (max-width: 600px) {
-    padding-top: 15%;
-  }
+}
+
+.content {
+  box-sizing: border-box;
+  padding-top: 100px;
 }
 
 .drawer-drawer {
@@ -70,7 +76,7 @@ a {
   background-repeat: repeat-y;
   border-right: 2px dotted #f5f5f5;
 
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     padding-top: 20%;
   }
 }
@@ -98,7 +104,7 @@ a {
   margin-bottom: 5%;
   border-radius: 15px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     max-width: 70%;
     width: 70%;
     left: 10%;
@@ -109,23 +115,26 @@ a {
 .in-text-img {
   display: inline;
   max-height: 12pt;
-  border: 1.5px solid #F50057;
+  border: 1.5px solid #304FFE;
   border-radius: 10px;
   margin: 0;
   padding: 0;
 }
 
 .footer {
+  display: inline-block;
   width: 100%;
   min-width: 100%;
   text-align: center;
-  height: 150pt;
+  height: 200pt;
+  max-height: 150px;
   background-image: linear-gradient(to bottom, #444444, black);
   z-index: 3;
   padding-top: 15pt;
 
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     height: 100pt;
+    max-height: 100pt;
   }
 }
 
@@ -141,4 +150,14 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pdf-preview {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  height: 40%;
+  width: 99.99%;
+  overflow: hidden;
+  scrollbar-base-color: transparent;
 }

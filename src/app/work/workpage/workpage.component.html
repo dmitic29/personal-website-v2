@@ -1,0 +1,27 @@
+<div class="content">
+  <h1>Professional Experience</h1>
+  <br/>
+  <mat-card class="card-card">
+    <mat-card-header class="card-header">
+      <mat-card-title>Professional</mat-card-title>
+      <mat-card-subtitle>Information about my career and experience</mat-card-subtitle>
+    </mat-card-header>
+      <mat-card-content class="card-content">
+          <p>I earned two college degrees from Webster University in 2019, a <a href="https://www.webster.edu/catalog/current/undergraduate-catalog/majors/computer-science.html" target="_blank">BSc. Computer Science</a> and a <a href="https://www.webster.edu/catalog/current/undergraduate-catalog/majors/finance.html" target="_blank">Bsc. Finance</a>. I graduated recognized on the Dean's List, with a GPA of 3.81. My work experience consists of several internships, personal, freelance, and independent projects, and on-campus jobs. You can read about the details of my professional background in my resume attached on this page.
+          <br/>
+          Please connect with me on LinkedIn and GitHub. &nbsp;
+          <a href="https://www.linkedin.com/in/dimitrije-mitic-b38213149/" target="_blank"><img [src]="'../../../assets/linkedin.png'" align="top" class="in-text-img" height="18pt" width="18pt" /></a>
+          &nbsp;
+          <a href="https://github.com/dmitic29" target="_blank"><img [src]="'../../../assets/GitHub-Mark.png'" align="top" class="in-text-img" height="18pt" width="18pt" /></a>
+          <br/>
+          <span style="float: center;">My resume displayed below can be downloaded <a [href]="pdfSrc" download>here</a>.</span>
+        </p>
+        <div class="pdf-preview">
+          <pdf-viewer id="pdf-view" [src]="pdfSrc"
+          [render-text]="true"
+          [original-size]="false"
+        ></pdf-viewer>
+        </div>
+      </mat-card-content>
+  </mat-card>
+</div>
