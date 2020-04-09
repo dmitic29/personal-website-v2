@@ -22,9 +22,11 @@ export class ContactService {
 
   doContact() {
     Email.send({
-      SecureToken: 'fddaa199-c978-4224-ba48-29f6c4e1bf5b',
-      To : 'dimitrije.mitic29@yahoo.com',
-      From : `dimitrije.mitic29@gmail.com`,
+      Host : 'smtp.gmail.com',
+      Username: 'mailserverdimitrimitic@gmail.com',
+      Password: 'mailserver123',
+      To : 'dimitrije.mitic29@gmail.com',
+      From : `mailserverdimitrimitic@gmail.com`,
       Subject : 'PERSONAL WEBISTE CONTACT',
       Body : `
         <b>Name:</b><br/>${this.contact.name} <br/>
