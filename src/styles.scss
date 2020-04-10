@@ -33,11 +33,11 @@ $custom-typography: mat-typography-config($font-family: '"Quicksand", sans-serif
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Quicksand, Roboto, "Helvetica Neue", sans-serif;}
+body { margin: 0; font-family: Quicksand, Roboto, "Helvetica Neue", sans-serif; font-size: larger;}
 
 h1 {
   color: #F50057;
-  text-decoration: none;
+  font-weight: bold;
 }
 
 a {
@@ -62,10 +62,13 @@ button {
 
 #toolbar-title {
   margin-left: 2%;
-  letter-spacing: 1px;;
+  letter-spacing: 1px;
+  font-weight: bolder;
 }
 
 #topOfPage {
+  position: absolute;
+  top: -20px;
   display: hidden;
 }
 

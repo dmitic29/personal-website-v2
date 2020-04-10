@@ -9,13 +9,13 @@
     <mat-drawer #drawer class="drawer-drawer" mode="side" opened>
       <h3>Menu</h3>
       <div class="btn-link">
-        <a routerLink="/home"><button class="navigation-btn" mat-flat-button color="accent">Home</button></a>
+        <a routerLink="/home"><button class="navigation-btn" mat-flat-button color="accent" (click)="scrollTop()">Home</button></a>
       </div>
       <div class="btn-link">
-        <a routerLink="/work"><button class="navigation-btn" mat-flat-button color="accent">Professional</button></a>
+        <a routerLink="/work"><button class="navigation-btn" mat-flat-button color="accent" (click)="scrollTop()">Professional</button></a>
       </div>
       <div class="btn-link">
-        <a routerLink="/contact"><button class="navigation-btn" mat-flat-button color="accent">Contact</button></a>
+        <a routerLink="/contact"><button class="navigation-btn" mat-flat-button color="accent" (click)="scrollTop()">Contact</button></a>
       </div>
 
     </mat-drawer>
