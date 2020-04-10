@@ -20,8 +20,11 @@
 
     </mat-drawer>
     <mat-drawer-content class="drawer-content">
+      <span id="topOfPage"></span>
       <router-outlet></router-outlet>
       <footer class="footer">
+        <button id="to-top-btn" mat-button (click)="scrollTop()">To Top Of Page</button>
+        <br/>
         <p>
         &copy; Dimitrije Mitic, All Rights Reserved
         <br/>

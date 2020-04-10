@@ -16,4 +16,7 @@ export class AppComponent {
     }
   }
 
+  scrollTop() {
+    document.getElementById('topOfPage').scrollIntoView({behavior: 'smooth'});
+  }
 }
